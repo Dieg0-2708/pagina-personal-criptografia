@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5ef">
+    <meta name="description" content="Soy Diego Castillo Rivera, estudiante de Ingeniería en Sistemas Computacionales en ESCOM-IPN. Conoce mi formación, proyectos e intereses en ciberseguridad y desarrollo web.">
+    <title>Diego Castillo Rivera · Portafolio personal</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/NotoSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+      <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></symbol>
+      <symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-6-2m12 5v-4a3.4 3.4 0 0 0-1-2.6c3.3-.4 6.7-1.6 6.7-7.3A5.7 5.7 0 0 0 19.2 4a5.2 5.2 0 0 0-.1-4s-1.2-.4-4.1 1.5a14 14 0 0 0-7.4 0C4.7-.4 3.5 0 3.5 0a5.2 5.2 0 0 0-.1 4 5.7 5.7 0 0 0-1.5 4c0 5.7 3.4 6.9 6.7 7.3A3.4 3.4 0 0 0 7.6 18v4" transform="translate(1 1) scale(.9)"/></symbol>
+      <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+      <symbol id="key" viewBox="0 0 24 24"><circle cx="8" cy="9" r="5"/><path d="m12 13 8 8m-4-4 3-3m-1 5 3-3"/></symbol>
+      <symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+      <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#inicio" aria-label="Diego Castillo Rivera, inicio">dcr<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú"><span></span><span></span></button>
+        <nav id="navegacion" class="main-nav" aria-label="Navegación principal">
+          <a href="#formacion">Formación</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#criptografia">Criptografía</a>
+          <a class="nav-contact" href="#contacto">Hablemos <svg class="icon"><use href="#arrow-up-right"/></svg></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero container" id="inicio" aria-labelledby="hero-titulo">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Estudiante en ESCOM · IPN</p>
+          <p class="hero-greeting">Hola, soy</p>
+          <h1 id="hero-titulo">Diego<br> Castillo Rivera<span class="accent-period">.</span></h1>
+          <p class="hero-description">Estoy construyendo mi camino entre la <strong>ciberseguridad</strong>, el desarrollo web y la electrónica digital. Me gusta resolver problemas y aprender haciendo.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="documentos/CV_Diego_Castillo_Rivera.pdf" download>Descargar mi CV <svg class="icon"><use href="#download"/></svg></a>
+            <a class="text-link" href="#proyectos">Conoce mis proyectos <svg class="icon"><use href="#arrow-down"/></svg></a>
+          </div>
+          <div class="hero-meta"><span>Ciudad de México</span><span>6.º semestre</span><span>Ingeniería en Sistemas Computacionales</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-topline"><span>UN POCO SOBRE MÍ</span><span>01 / DCR</span></div>
+          <figure class="portrait-frame has-photo">
+            <img id="profile-photo" src="assets/perfil-diego.jpg" alt="Retrato de Diego Castillo Rivera con traje y lentes." width="1290" height="1718" fetchpriority="high">
+            <figcaption id="profile-caption" class="portrait-label" hidden><span class="status-dot"></span> Foto de perfil por agregar</figcaption>
+          </figure>
+          <div class="portrait-footnote"><span>Siempre hay algo nuevo<br> por entender.</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2v44M2 24h44M8.5 8.5l31 31m-31 0 31-31"/></svg></div>
+        </div>
+      </section>
+
+      <div class="interest-strip" aria-label="Mis áreas de interés"><div class="container interest-inner"><span>CIBERSEGURIDAD</span><span class="strip-star" aria-hidden="true">✳</span><span>DESARROLLO WEB</span><span class="strip-star" aria-hidden="true">✳</span><span>ELECTRÓNICA DIGITAL</span><span class="strip-star" aria-hidden="true">✳</span><span>APRENDIZAJE CONTINUO</span></div></div>
+
+      <section class="section container education-section" id="formacion" aria-labelledby="formacion-titulo">
+        <div class="section-intro"><p class="eyebrow">01 / MI FORMACIÓN</p><h2 id="formacion-titulo">Aprender.<br> Probar.<br> <em>Construir.</em></h2><p>La universidad es el punto de partida. Los proyectos en equipo son donde pongo en práctica lo que aprendo.</p></div>
+        <div class="education-content">
+          <article class="education-main"><p class="small-label">ACTUALMENTE</p><h3>Ingeniería en Sistemas<br> Computacionales</h3><p>Escuela Superior de Cómputo<br> Instituto Politécnico Nacional</p><span class="pill">6.º semestre · En curso</span></article>
+          <div class="learning-list">
+            <div><span class="learning-number">+</span><div><h3>Ciberseguridad con Microsoft</h3><p>En curso: Fundamentos para la ciberseguridad con tecnologías de Microsoft.</p></div></div>
+            <div><span class="learning-number">+</span><div><h3>Inglés en CELEX-IPN</h3><p>Estudios en curso. Nivel B2 aproximado, autoevaluado.</p></div></div>
+          </div>
+          <div class="skills-block"><p class="small-label">HERRAMIENTAS CON LAS QUE HE TRABAJADO</p><ul class="tags" aria-label="Conocimientos técnicos"><li>Java</li><li>Python</li><li>C</li><li>HTML &amp; CSS</li><li>JavaScript</li><li>React</li><li>Tailwind CSS</li><li>Node.js</li><li>Bases de datos</li><li>Packet Tracer</li></ul><p class="skill-note">También tengo experiencia inicial con Microsoft Azure, Defender y Purview.</p></div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="proyectos" aria-labelledby="proyectos-titulo">
+        <div class="container">
+          <div class="section-top"><div><p class="eyebrow">02 / LO QUE HE CONSTRUIDO</p><h2 id="proyectos-titulo">Ideas que se vuelven<br> <em>proyectos.</em></h2></div><a class="text-link" href="https://github.com/Dieg0-2708" target="_blank" rel="noopener noreferrer">Mi GitHub <svg class="icon"><use href="#arrow-up-right"/></svg></a></div>
+          <article class="project-row"><div class="project-number">01</div><div class="project-description"><p class="small-label">PROYECTO ACADÉMICO · EN EQUIPO</p><h3>Una segunda vida para<br> los componentes electrónicos.</h3><p>Una plataforma web de compra, venta, donación y trueque para la comunidad politécnica. Participé en la concepción del proyecto, el desarrollo web y la retroalimentación del equipo.</p><ul class="project-tools" aria-label="Tecnologías del proyecto"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bases de datos</li></ul></div><div class="project-art components-art" aria-hidden="true"><div class="circuit-line circuit-one"></div><div class="circuit-line circuit-two"></div><div class="chip"><span>↔</span></div><span class="art-caption">CONECTAR · REUTILIZAR</span></div></article>
+          <article class="project-row"><div class="project-number">02</div><div class="project-description"><p class="small-label">PROYECTO ACADÉMICO · EN EQUIPO</p><h3>Los eventos escolares,<br> en un solo lugar.</h3><p>Una plataforma para gestionar eventos universitarios. Desarrollé el motor de taquilla y participé en el frontend y el backend junto con un equipo escolar.</p><ul class="project-tools" aria-label="Tecnologías del proyecto"><li>React</li><li>Tailwind CSS</li><li>Node.js</li></ul></div><div class="project-art ticket-art" aria-hidden="true"><div class="ticket"><span>ESCOM / EVENTOS</span><strong>ADMIT<br> ONE.</strong><div class="ticket-barcode"></div><small>ENTRADA · 001</small></div></div></article>
+          <aside class="experience-note"><span class="experience-year">2023</span><div><h3>También he aprendido con las manos.</h3><p>Durante mi servicio social en la Unidad de Informática del CECyT 1 Gonzalo Vázquez Vela, reparé equipos, apoyé en la instalación de laboratorios y trabajé con cableado Ethernet y montaje de equipo digital y electrónico.</p></div><span class="experience-label">SOPORTE E<br> INFRAESTRUCTURA</span></aside>
+        </div>
+      </section>
+
+      <section class="section container hobbies-section" id="hobbies" aria-labelledby="hobbies-titulo">
+        <div class="section-top"><div><p class="eyebrow">03 / FUERA DEL CÓDIGO</p><h2 id="hobbies-titulo">También hay tiempo<br> para <em>disfrutar.</em></h2></div><p id="hobbies-intro" class="section-aside">Explorar, crear y disfrutar el proceso. Así me gusta pasar el tiempo fuera de clase.</p></div>
+        <div class="hobbies-grid" id="hobbies-grid">
+          <article class="hobby"><div class="hobby-image"><img src="assets/videojuegos.png" alt="Captura de mi partida de Brawl Stars." width="720" height="560" style="object-fit:contain;object-position:50% 50%" loading="lazy"></div><div class="hobby-heading"><h3>Videojuegos</h3><span>01</span></div><p>Disfruto explorar mundos abiertos y resolver puzzles y retos. Siempre hay un lugar nuevo por descubrir o un desafío por superar.</p></article>
+          <article class="hobby"><div class="hobby-image"><img src="assets/circuitos.jpg" alt="Circuito armado sobre una protoboard, con cables, componentes y un display de siete segmentos." width="720" height="560" style="object-fit:cover;object-position:50% 54%" loading="lazy"></div><div class="hobby-heading"><h3>Armar circuitos</h3><span>02</span></div><p>Ensamblar circuitos con música de fondo me relaja mucho. Disfruto ese momento de concentración mientras voy armando cada conexión.</p></article>
+          <article class="hobby"><div class="hobby-image"><img src="assets/cocina.jpg" alt="Pasta preparada en un sartén y mi mano dando el visto bueno." width="720" height="560" style="object-fit:cover;object-position:48% 47%" loading="lazy"></div><div class="hobby-heading"><h3>Cocinar y comer</h3><span>03</span></div><p>Me gusta cocinar mis platillos favoritos y dedicarles el esfuerzo necesario para que queden justo como me gustan. Disfrutar el resultado también es parte del plan.</p></article>
+        </div>
+      </section>
+
+      <section class="crypto-section" id="criptografia" aria-labelledby="criptografia-titulo">
+        <div class="container crypto-grid">
+          <div class="crypto-story"><p class="eyebrow">04 / ACERCA DE CRIPTOGRAFÍA</p><h2 id="criptografia-titulo">Una llave para compartir.<br> Otra para <em>guardar.</em></h2><p class="crypto-intro">RSA muestra una idea central de la criptografía: compartir una llave para cifrar mensajes y conservar otra para descifrarlos.</p><div class="rsa-history"><span class="history-year">1977</span><div><h3>Rivest, Shamir y Adleman</h3><p>Los tres investigadores del MIT propusieron RSA, un sistema de criptografía de llave pública. Su nombre reúne las iniciales de sus apellidos.</p></div></div><p>En RSA se cifra con una llave pública y se descifra con una llave privada. El sistema utiliza aritmética modular; la dificultad de factorizar productos de primos grandes forma parte de su seguridad.</p><a class="source-link" href="https://dspace.mit.edu/entities/publication/a2e09fea-6f05-48a5-9ce9-5073dfcde567" target="_blank" rel="noopener noreferrer">Leer el documento original en el MIT <svg class="icon"><use href="#arrow-up-right"/></svg></a></div>
+          <div class="rsa-lab" aria-labelledby="rsa-demo-titulo"><div class="lab-topline"><span class="status-dot"></span><span>PEQUEÑO LABORATORIO</span><span class="lab-symbol">↗</span></div><h3 id="rsa-demo-titulo">Prueba la idea.</h3><p>Elige un número, cífralo y recupera el original.</p><div class="demo-key"><span>LLAVE PÚBLICA DEL EJEMPLO</span><code>n = 143 &nbsp; e = 7</code></div><form id="rsa-form"><label for="rsa-message">Tu número <span>(de 0 a 142)</span></label><div class="rsa-input-row"><input id="rsa-message" name="message" type="number" min="0" max="142" step="1" value="42" required inputmode="numeric" aria-describedby="rsa-error"><button class="button button-lime" type="submit">Cifrar <svg class="icon"><use href="#arrow-up-right"/></svg></button></div><p id="rsa-error" class="field-error" role="alert"></p></form><div class="rsa-result" aria-live="polite" aria-atomic="true"><div><span>NÚMERO CIFRADO</span><output id="rsa-cipher">81</output></div><p id="rsa-equation">42⁷ mod 143 = 81</p><button id="rsa-decrypt" class="decrypt-button" type="button">Descifrar el resultado <span aria-hidden="true">→</span></button><p id="rsa-recovered" class="recovered" hidden></p></div><p class="demo-note">Ejemplo didáctico con primos pequeños (11 y 13) y d = 103. Muestra la operación matemática de RSA; no se utiliza para proteger información real.</p></div>
+        </div>
+      </section>
+
+      <section class="section container downloads-section" id="documentos" aria-labelledby="documentos-titulo"><div><p class="eyebrow">05 / PARA LLEVAR</p><h2 id="documentos-titulo">Mi perfil.<br> <em>En tus manos.</em></h2></div><div class="downloads-list"><a class="download-row" href="documentos/CV_Diego_Castillo_Rivera.pdf" download><span class="file-icon"><svg class="icon"><use href="#download"/></svg></span><span><strong>Mi currículum</strong><small>Formación, proyectos y experiencia · PDF</small></span><svg class="icon download-arrow"><use href="#arrow-up-right"/></svg></a><a class="download-row" href="#llave-publica"><span class="file-icon"><svg class="icon"><use href="#key"/></svg></span><span><strong>Mi llave Pública</strong><small id="key-short-status">Próximamente · Práctica de RSA</small></span><svg class="icon download-arrow"><use href="#arrow-up-right"/></svg></a><div class="key-note" id="llave-publica" tabindex="-1"><p class="small-label">LLAVE PÚBLICA</p><p id="key-description">Generaré mi llave pública en la próxima práctica de RSA. Cuando esté lista, este enlace permitirá descargarla.</p></div></div></section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contacto-titulo"><div class="container"><div class="contact-top"><div><p class="eyebrow">SIGAMOS EN CONTACTO</p><h2 id="contacto-titulo">Siempre hay algo<br> por <em>construir.</em></h2></div><p>Me interesa encontrar un espacio de servicio social donde pueda aprender, colaborar y aportar en proyectos de tecnología.</p></div><div class="contact-bottom"><a class="email-link" href="mailto:dcr2708@outlook.com">dcr2708@outlook.com <svg class="icon"><use href="#arrow-up-right"/></svg></a><div class="contact-actions"><button class="round-link" id="copy-email" type="button" aria-label="Copiar correo electrónico" title="Copiar correo"><svg class="icon"><use href="#copy"/></svg></button><a class="round-link" href="https://github.com/Dieg0-2708" target="_blank" rel="noopener noreferrer" aria-label="Ver el perfil de Diego en GitHub" title="GitHub"><svg class="icon"><use href="#github"/></svg></a><a class="round-link" href="mailto:dcr2708@outlook.com" aria-label="Enviar un correo a Diego" title="Enviar correo"><svg class="icon"><use href="#mail"/></svg></a></div></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><a class="wordmark" href="#inicio" aria-label="Volver al inicio">dcr<span>.</span></a><p>Diego Castillo Rivera · ESCOM, IPN</p><span>Criptografía · 2026</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+    <dialog id="photo-dialog" class="photo-dialog" aria-label="Fotografía ampliada"><button type="button" class="dialog-close" aria-label="Cerrar fotografía"><svg class="icon"><use href="#close"/></svg></button><img src="assets/hobby-1.svg" alt=""><p></p></dialog>
+  </body>
+</html>
